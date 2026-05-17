@@ -5,9 +5,19 @@ on:
     - cron: '0 * * * *' # Runs automatically every hour
   workflow_dispatch: # Allows you to trigger it manually via the GitHub UI
 
+# --- FIXES EXIT CODE 128 ---
+# Grant the GitHub Actions runner permission to commit and push changes back to the repo
+permissions:
+  contents: write
+
 jobs:
   update-weather:
     runs-on: ubuntu-latest
+    
+    # --- SILENCES NODE.JS 20 DEPRECATION WARNING ---
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -30,5 +40,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add images/current_weather.svg
-          git diff-index --quiet HEAD || git commit -m "Automated update of current_weather.svg"
-          git push origin main
+          
+          # Only commit and push if the image actually changed
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Automated update of current_weather.svg"
+            git push origin main
+          else
+            echo "No changes detected in weather state. Skipping push."
+          fi
