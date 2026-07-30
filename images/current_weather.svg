@@ -1,79 +1,132 @@
 <svg viewBox="0 0 800 480" width="800" height="480" xmlns="http://www.w3.org/2000/svg">
-  <!-- Sky background -->
-  <rect width="800" height="480" fill="#FFD700"/>
-  <!-- Ground -->
-  <rect x="0" y="360" width="800" height="120" fill="#E8A020"/>
+  <!-- Sky - pleasant mild grey-blue -->
+  <rect width="800" height="480" fill="#A8C4D8"/>
 
-  <!-- Sun -->
-  <circle cx="660" cy="90" r="65" fill="#FFEC00" stroke="#FF8C00" stroke-width="5"/>
-  <!-- Sun rays -->
-  <g stroke="#FF8C00" stroke-width="5" stroke-linecap="round">
-    <line x1="660" y1="5" x2="660" y2="25"/>
-    <line x1="660" y1="155" x2="660" y2="175"/>
-    <line x1="575" y1="90" x2="555" y2="90"/>
-    <line x1="745" y1="90" x2="765" y2="90"/>
-    <line x1="600" y1="30" x2="585" y2="15"/>
-    <line x1="720" y1="150" x2="735" y2="165"/>
-    <line x1="720" y1="30" x2="735" y2="15"/>
-    <line x1="600" y1="150" x2="585" y2="165"/>
+  <!-- Soft clouds -->
+  <!-- Cloud 1 left -->
+  <ellipse cx="155" cy="90" rx="100" ry="50" fill="white"/>
+  <ellipse cx="100" cy="100" rx="70" ry="45" fill="white"/>
+  <ellipse cx="210" cy="100" rx="80" ry="45" fill="white"/>
+  <ellipse cx="155" cy="110" rx="115" ry="40" fill="white"/>
+
+  <!-- Cloud 2 right -->
+  <ellipse cx="630" cy="80" rx="110" ry="52" fill="white"/>
+  <ellipse cx="570" cy="92" rx="80" ry="46" fill="white"/>
+  <ellipse cx="690" cy="90" rx="90" ry="46" fill="white"/>
+  <ellipse cx="630" cy="105" rx="125" ry="40" fill="white"/>
+
+  <!-- Small cloud middle-ish -->
+  <ellipse cx="400" cy="65" rx="75" ry="35" fill="white" opacity="0.8"/>
+  <ellipse cx="355" cy="72" rx="55" ry="32" fill="white" opacity="0.8"/>
+  <ellipse cx="445" cy="72" rx="60" ry="32" fill="white" opacity="0.8"/>
+
+  <!-- Sun peeking from behind cloud -->
+  <circle cx="630" cy="68" r="42" fill="#FFD700"/>
+  <!-- Partial sun rays -->
+  <g stroke="#FFB000" stroke-width="4" stroke-linecap="round">
+    <line x1="630" y1="18" x2="630" y2="30"/>
+    <line x1="670" y1="28" x2="663" y2="38"/>
+    <line x1="685" y1="60" x2="673" y2="63"/>
+    <line x1="590" y1="28" x2="597" y2="38"/>
+    <line x1="573" y1="60" x2="585" y2="63"/>
   </g>
 
-  <!-- Heat wavy lines -->
-  <path d="M100 340 Q120 320 140 340 Q160 360 180 340" stroke="#FF6600" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M200 340 Q220 320 240 340 Q260 360 280 340" stroke="#FF6600" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M550 340 Q570 320 590 340 Q610 360 630 340" stroke="#FF6600" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M630 340 Q650 320 670 340 Q690 360 710 340" stroke="#FF6600" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Gently rolling green ground -->
+  <ellipse cx="400" cy="490" rx="550" ry="130" fill="#4CAF50"/>
+  <rect x="0" y="400" width="800" height="80" fill="#4CAF50"/>
+  <!-- Darker ground stripe -->
+  <rect x="0" y="440" width="800" height="40" fill="#388E3C"/>
+  <!-- Ground hills -->
+  <ellipse cx="100" cy="402" rx="180" ry="35" fill="#4CAF50"/>
+  <ellipse cx="700" cy="405" rx="180" ry="32" fill="#4CAF50"/>
 
-  <!-- Cat body -->
-  <ellipse cx="370" cy="310" rx="105" ry="90" fill="#FF7A2F" stroke="#222" stroke-width="4"/>
+  <!-- Small flowers in grass -->
+  <!-- Flower clusters -->
+  <circle cx="80" cy="410" r="6" fill="#FFD700"/>
+  <circle cx="72" cy="406" r="5" fill="white"/>
+  <circle cx="88" cy="406" r="5" fill="white"/>
+  <circle cx="80" cy="400" r="5" fill="white"/>
+
+  <circle cx="200" cy="415" r="6" fill="#FF4488"/>
+  <circle cx="192" cy="411" r="5" fill="white"/>
+  <circle cx="208" cy="411" r="5" fill="white"/>
+  <circle cx="200" cy="405" r="5" fill="white"/>
+
+  <circle cx="590" cy="412" r="6" fill="#FFD700"/>
+  <circle cx="582" cy="408" r="5" fill="white"/>
+  <circle cx="598" cy="408" r="5" fill="white"/>
+  <circle cx="590" cy="402" r="5" fill="white"/>
+
+  <circle cx="700" cy="418" r="6" fill="#FF4488"/>
+  <circle cx="692" cy="414" r="5" fill="white"/>
+  <circle cx="708" cy="414" r="5" fill="white"/>
+  <circle cx="700" cy="408" r="5" fill="white"/>
+
+  <!-- A nice bird -->
+  <path d="M170 200 Q185 190 200 200" stroke="#2244AA" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M200 200 Q215 190 230 200" stroke="#2244AA" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Butterfly -->
+  <path d="M620 250 Q640 220 650 250 Q640 240 630 250" fill="#FF6600" opacity="0.8"/>
+  <path d="M620 250 Q640 280 650 250 Q640 260 630 250" fill="#FF8800" opacity="0.8"/>
+  <line x1="625" y1="250" x2="650" y2="250" stroke="#222" stroke-width="1.5"/>
+
+  <!-- Cat body - relaxed and content -->
+  <ellipse cx="390" cy="315" rx="115" ry="95" fill="#FF7A2F" stroke="#222" stroke-width="4"/>
   <!-- Cat head -->
-  <circle cx="370" cy="185" r="80" fill="#FF7A2F" stroke="#222" stroke-width="4"/>
+  <circle cx="390" cy="188" r="85" fill="#FF7A2F" stroke="#222" stroke-width="4"/>
 
-  <!-- Ears -->
-  <polygon points="300,130 320,80 350,130" fill="#FF7A2F" stroke="#222" stroke-width="4" stroke-linejoin="round"/>
-  <polygon points="390,130 420,80 440,130" fill="#FF7A2F" stroke="#222" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Ears - perky and happy -->
+  <polygon points="317,148 333,92 368,148" fill="#FF7A2F" stroke="#222" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="412,148 447,92 463,148" fill="#FF7A2F" stroke="#222" stroke-width="4" stroke-linejoin="round"/>
   <!-- Inner ears -->
-  <polygon points="308,125 322,90 345,125" fill="#FF4444"/>
-  <polygon points="395,125 418,90 435,125" fill="#FF4444"/>
+  <polygon points="325,143 336,106 362,143" fill="#FF4444"/>
+  <polygon points="418,143 444,106 458,143" fill="#FF4444"/>
 
-  <!-- Eyes - squinting from heat -->
-  <path d="M330 185 Q345 172 360 185" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M380 185 Q395 172 410 185" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Eyes - half-closed contentedly -->
+  <ellipse cx="352" cy="190" rx="22" ry="22" fill="#FFD700" stroke="#222" stroke-width="3"/>
+  <ellipse cx="428" cy="190" rx="22" ry="22" fill="#FFD700" stroke="#222" stroke-width="3"/>
+  <circle cx="356" cy="192" r="12" fill="#111"/>
+  <circle cx="432" cy="192" r="12" fill="#111"/>
+  <circle cx="360" cy="187" r="4" fill="white"/>
+  <circle cx="436" cy="187" r="4" fill="white"/>
+  <!-- Slightly squinted lids -->
+  <path d="M330 182 Q352 175 374 182" stroke="#444" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M406 182 Q428 175 450 182" stroke="#444" stroke-width="3" fill="none" stroke-linecap="round"/>
 
   <!-- Nose -->
-  <ellipse cx="370" cy="205" rx="10" ry="7" fill="#FF4488"/>
-  <!-- Mouth -->
-  <path d="M362 212 Q370 222 378 212" stroke="#222" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <!-- Tongue out (hot!) -->
-  <ellipse cx="370" cy="224" rx="12" ry="10" fill="#FF4444"/>
-  <line x1="370" y1="222" x2="370" y2="228" stroke="#CC2222" stroke-width="2"/>
+  <ellipse cx="390" cy="210" rx="10" ry="7" fill="#FF4488"/>
+  <!-- Happy smile -->
+  <path d="M378 222 Q390 235 402 222" stroke="#222" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Tiny mouth line -->
+  <line x1="390" y1="217" x2="390" y2="222" stroke="#222" stroke-width="3"/>
 
   <!-- Whiskers -->
-  <line x1="300" y1="200" x2="360" y2="205" stroke="#444" stroke-width="2.5"/>
-  <line x1="300" y1="212" x2="360" y2="210" stroke="#444" stroke-width="2.5"/>
-  <line x1="380" y1="205" x2="440" y2="200" stroke="#444" stroke-width="2.5"/>
-  <line x1="380" y1="210" x2="440" y2="212" stroke="#444" stroke-width="2.5"/>
+  <line x1="313" y1="208" x2="376" y2="212" stroke="#444" stroke-width="2.5"/>
+  <line x1="311" y1="220" x2="376" y2="218" stroke="#444" stroke-width="2.5"/>
+  <line x1="404" y1="212" x2="467" y2="208" stroke="#444" stroke-width="2.5"/>
+  <line x1="404" y1="218" x2="469" y2="220" stroke="#444" stroke-width="2.5"/>
 
-  <!-- Cat front legs -->
-  <ellipse cx="315" cy="385" rx="30" ry="18" fill="#FF7A2F" stroke="#222" stroke-width="4"/>
-  <ellipse cx="425" cy="385" rx="30" ry="18" fill="#FF7A2F" stroke="#222" stroke-width="4"/>
+  <!-- Stripes on head -->
+  <path d="M370 118 Q390 112 410 118" stroke="#CC5500" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M362 130 Q390 123 418 130" stroke="#CC5500" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M358 143 Q390 136 422 143" stroke="#CC5500" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Front paws relaxed -->
+  <ellipse cx="330" cy="393" rx="32" ry="17" fill="#FF7A2F" stroke="#222" stroke-width="3"/>
+  <ellipse cx="450" cy="393" rx="32" ry="17" fill="#FF7A2F" stroke="#222" stroke-width="3"/>
   <!-- Toe lines -->
-  <line x1="307" y1="393" x2="307" y2="399" stroke="#222" stroke-width="2"/>
-  <line x1="315" y1="395" x2="315" y2="401" stroke="#222" stroke-width="2"/>
-  <line x1="323" y1="393" x2="323" y2="399" stroke="#222" stroke-width="2"/>
-  <line x1="417" y1="393" x2="417" y2="399" stroke="#222" stroke-width="2"/>
-  <line x1="425" y1="395" x2="425" y2="401" stroke="#222" stroke-width="2"/>
-  <line x1="433" y1="393" x2="433" y2="399" stroke="#222" stroke-width="2"/>
+  <line x1="322" y1="401" x2="322" y2="406" stroke="#222" stroke-width="2"/>
+  <line x1="330" y1="403" x2="330" y2="408" stroke="#222" stroke-width="2"/>
+  <line x1="338" y1="401" x2="338" y2="406" stroke="#222" stroke-width="2"/>
+  <line x1="442" y1="401" x2="442" y2="406" stroke="#222" stroke-width="2"/>
+  <line x1="450" y1="403" x2="450" y2="408" stroke="#222" stroke-width="2"/>
+  <line x1="458" y1="401" x2="458" y2="406" stroke="#222" stroke-width="2"/>
 
-  <!-- Tail curled lazily -->
-  <path d="M470 330 Q530 280 540 350 Q550 400 500 410" stroke="#FF7A2F" stroke-width="18" fill="none" stroke-linecap="round"/>
-  <path d="M470 330 Q530 280 540 350 Q550 400 500 410" stroke="#222" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="none" fill-opacity="0"/>
+  <!-- Tail curled up contentedly -->
+  <path d="M498 320 Q570 340 560 390 Q550 420 510 415 Q480 412 470 400" stroke="#FF7A2F" stroke-width="18" fill="none" stroke-linecap="round"/>
 
-  <!-- Sweat drop -->
-  <ellipse cx="420" cy="155" rx="8" ry="12" fill="#3399FF"/>
-  <polygon points="412,155 428,155 420,140" fill="#3399FF"/>
-
-  <!-- Stripe markings -->
-  <path d="M340 230 Q360 240 380 230" stroke="#CC5500" stroke-width="3" fill="none"/>
-  <path d="M350 270 Q370 280 390 270" stroke="#CC5500" stroke-width="3" fill="none"/>
+  <!-- Stripe on body -->
+  <path d="M355 270 Q390 262 425 270" stroke="#CC5500" stroke-width="3" fill="none"/>
+  <path d="M350 295 Q390 286 430 295" stroke="#CC5500" stroke-width="3" fill="none"/>
 </svg>
